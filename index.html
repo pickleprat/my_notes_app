@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Stuff</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Varela+Round&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,500;1,100&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="daddyDiv">
+        <div class="containerChild" id="div1">
+            <div class="subordinate1" id="childrendiv1i">
+                <h1 class="headingdiv1" id="mainHeading">Your notes app</h1>
+            </div>
+            <div class="subordinate1" id="childrendiv1j">
+                <form action="index.html" method="post">
+                    <label for="searchNote">Search your notes: </label><br>
+                    <input type="text" name="search" id="searchNote" placeholder="Your note here">
+                    <input type="button" value="search" class="btn" id="btn1"><hr>
+                </form>
+            </div>
+        </div>
+        <div class="containerChild" id="div2">
+            <h2 class="headingdiv3" id="minor">Save your note here</h2>
+        </div>
+        <div class="containerChild" id="div3">            
+            <form action="index.html" method="post">
+                <textarea name="notes" id="notes" cols="30" rows="10" contenteditable="True" placeholder="Enter Note here"></textarea><br>
+                <input type="button" value="Add Notes" class="btn" id="btn2">
+            </form>
+            <hr>
+        </div>
+        <div class="containerChild" id="div4">
+            <h4 class="headingdiv4" id="displayNotes">Your saved notes here</h4><br>
+            <div class="subordinate2" id="div4children">
+                <div class="classNotes" id="index1" >Apple Bitches</div>
+                <button class="classButton" id="notesBtn1">Remove</button>
+            </div>
+        </div>
+        <script src="notesJs/notesApp.js"></script>
+    </div>
+</body>
+</html>
